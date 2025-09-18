@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Landing</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-passo0.jpg" alt="">
+            <p>Em 21 de julho de 1969, a missão Apollo 11 conquistava o feito de levar um homem à Lua. No entanto, foi um processo arriscado e complexo, onde qualquer erro seria pago com a própria vida. Nesse jogo você assumirá a mente do astronauta e comandante Neil Armstrong, numa realidade onde pequenas decisões podem te salvar... ou te levar a consequências fatais!</p>
+            <button class="btn-proximo" data-proximo="1">INICIAR</button>
+        </div>
+         <div class="passo" id="passo-1">
+            <img src="1.PNG" alt="">
+            <p>20 de julho de 1969, Atmosfera Lunar, 17h49: Dentro da Eagle, você ouve diversos sistemas fazendo seu trabalho e a voz de Houston no rádio. A vastidão do cosmos preenche o vidro da espaçonave. Os últimos preparativos começam agora!</p>
+            <button class="btn-proximo" data-proximo="perigo">Pedir a Buzz que verifique o computador</button>
+            <button class="btn-proximo" data-proximo="perigo">"Ok Houston, aqui é a Eagle, Estamos descendo"</button>
+        </div>
+        <div class="passo" id="passo-perigo">
+            <img src="images.jpg" alt="">
+            <p>Um alarme dispara. O computador falhou e está fazendo comandos aleatórios e gastando o combustível. O que fazemos agora?</p>
+            <button class="btn-proximo" data-proximo="alertavermelho">Realizar um pouso de emergência</button>
+            <button class="btn-proximo" data-proximo="alertavermelho">"Houston, temos um problema"</button>
+        </div>
+        <div class="passo" id="passo-alertavermelho">
+            <p>Você toma o controla da espaçonave. Buzz tenta reativar o computador, mas todo o combustível foi gasto, tornando o impacto inevitável. A colisão ocorre. Todos demaiam</p>
+            <button class="btn-proximo" data-proximo="pouso">Duas horas depois</button>
+        </div>
+        <div class="passo" id="passo-pouso">
+            <img src="front.jpg" alt="">
+            <p>Ao acordar, fumaça e poeria sobem da superfície lunar. Os painéis de controle exibem luzes de advertência. Buzz te encara: "Comandante... Nell... o que fazemos agora?"</p>
+            <button class="btn-proximo" data-proximo="suprimento">Inspecionar os suprimentos</button>
+            <button class="btn-proximo" data-proximo="sistema">Analisar sistemas</button>
+            <button class="btn-proximo" data-proximo="sair">Sair da Eagle e verificar os danos externos</button>
+        </div>
+
+        <div class="passo" id="passo-suprimento">
+            <img src="front.jpg" alt="">
+            <p>Os suprimentos estão em ordem, há chance de sobreviver por 3 dias. É encontrado um pequeno rádio quebrado.</p>
+            <button class="btn-proximo" data-proximo="cabine">Continuar</button>
+        </div>
+
+        <div class="passo" id="passo-sistema">
+            <img src="front.jpg" alt="">
+            <p>Você passa horas analisando os painéis. O motor principal parece ter sofrido um dano irreparável com o combustível restante, mas o motor de subida parece... intacto!</p>
+            <button class="btn-proximo" data-proximo="cabine">Continuar</button>
+        </div>
+
+        <div class="passo" id="passo-sair">
+            <img src="cenario-passo-sair.PNG" alt="">
+            <p>Ao sair da espaçonave, é verificado que as pernas estão gravementes danificadas, impossibitando qualquer possibilidade de conserto. No entanto, vc observa uma luz distante.</p>
+            <button class="btn-proximo" data-proximo="volte">Voltar para a nave.</button>
+            <button class="btn-proximo" data-proximo="vai">Seguir a luz.</button>
+        </div>
+
+        <div class="passo" id="passo-volte">
+            <img src="cenario-passo-sair.PNG" alt="">
+            <p>Vc retorna a Eagle, com umas mistura de incerteza e insegurança, como algo o observasse. Mas deve ser bobeira, né?</p>
+            <button class="btn-proximo" data-proximo="cabine">Voltar para a nave.</button>
+        </div>
+
+        <div class="passo" id="passo-cabine">
+            <img src="front.jpg" alt="">
+            <p>A escuridão envolve o Eagle. Vocês consomem uma pequena ração. "Conseguimos passar pelo primeiro dia, Buzz," você diz. "Ainda temos uma chance."</p>
+            <button class="btn-proximo" data-proximo="dia2">Dia 2</button>
+        </div>
+
+        <div class="passo" id="passo-vai">
+            <img src="DECISÃO.jpg" alt="">
+            <p>Ao seguir a luz misteriosa, vc se depara com duas estruturas misteriosas: uma caverna e uma espaçonave. Qual inspecionar primeiro?</p>
+            <button class="btn-proximo" data-proximo="nave">Vamos ver a nave!</button>
+            <button class="btn-proximo" data-proximo="caverna">Inspecionar caverna!</button>
+        </div>
+
+        <div class="passo" id="passo-caverna">
+            <img src="caverna.PNG" alt="">
+            <p>No fundo da caverna, um pequeno brilho surge. Uma formação rochosa incomum te surpreende.</p>
+            <button class="btn-proximo" data-proximo="fim_alien">Tocar na rocha.</button>
+            <button class="btn-proximo" data-proximo="nave">Voltar para fora e verificar nave.</button>
+        </div>
+
+        <div class="passo" id="passo-fim_alien">
+            <img src="alien.PNG" alt="">
+            <p>Ao tocar na rocha, uma luz intensa te envolve. Ao abrir os olhos, você não reconhece nada ao seu redor e percebe que está preso em uma cápsula de tecnologia avançada. Voce observa as estruturas ao seu redor até o momento que criaturas humanóides se aproximam. Seu destino é desconhecido e sombrio e um lembrete de que... Não estamos sozinhos...</p>
+            <p>FINAL: ALIEN</p>
+        </div>
+
+
+         <div class="passo" id="passo-nave">
+            <img src="soviet.jpg" alt="">
+            <p>Ao se aproximar, uma escotilha range e se abre, de dentro... Surgem cosmonautas portando uma bandeira soviética! E AGORA?????</p>
+            <button class="btn-proximo" data-proximo="ajuda">Fazer sinal de paz.</button>
+            <button class="btn-proximo" data-proximo="nao">CORRER</button>
+        </div>
+
+        <div class="passo" id="nao">
+            <img src="soviet.jpg" alt="">
+            <p>ELES TE CAPTURARAM!!!</p>
+            <button class="btn-proximo" data-proximo="fim_prisao">DESTINO</button>
+        </div>
+
+        <div class="passo" id="ajuda">
+            <img src="UserView-5.jpg" alt="">
+            <p>Você é bem recebido pelos cosmonautas e relata sua situação utilizando gestos e sinais. Ele te compreendem e ossuem conhecimentos e recursos que complementam os seus. Esta improvável aliança em solo lunar pode ser a chave para a sobrevivência de todos.</p>
+            <button class="btn-proximo" data-proximo="fim_fimdaguerrafria">Alguns dias depois</button>
+        </div>
+        
+        <div class="passo" id="passo-fim_prisao">
+            <img src="p03jc1mr.jpg" alt="">
+            <p>Vocês são levados para dentro do módulo e, posteriormente, para uma base lunar secreta. Seus equipamentos são confiscados e a Eagle saqueada. Você e Aldrin assistem com lágrimas nos olhos a transmissão ao vivo do pouso da "Luna 1" enquanto vêm a Terra nascer entre as grades da prisão espacial. Seu destino é incerto e sombrio.</p>
+            <p>FINAL: FRACASSO E SUCESSO SOVIÉTICO</p>
+        </div>
+
+        <div class="passo" id="passo-fim_fimdaguerrafria">
+            <img src="Gigantic_jet_NOIRLab.jpg" alt="">
+            <p>Combinando o sistema de comunicação soviético com peças americanas, vocês conseguem enviar um sinal para Houston. O resgate transforma uma potencial tragédia em um momento histórico. As tensões da Guerra Fria diminuem e é levantada a hipótese de uma operação conjunta para construir uma base lunar.</p>
+            <p>FINAL: FIM DA GUERRA FRIA E INÍCIO DE UMA NOVA ERA</p>
+        </div>
+
+        <div class="passo" id="passo-dia2">
+            <img src="front.jpg" alt="">
+            <p>A manhã do 2° dia se inicia. Um cheiro de esperança há no ar, mas temos muito o que fazer.</p>
+            <button class="btn-proximo" data-proximo="oxi">Realizar uma EVA para  procurar por peças soltas do Eagle.</button>
+            <button class="btn-proximo" data-proximo="util">Buscar por equipamentos úteis na nave</button>
+           </div>
+
+        <div class="passo" id="passo-oxi">
+            <img src="cenario-passo-sair.PNG" alt="">
+            <p>Durante a EVA, você encontra um pequeno tanque de oxigênio reserva que foi ejetado durante o pouso. É um achado valioso que poderia fazer a diferença.</p>
+            <button class="btn-proximo" data-proximo="cabine2">A noite cai</button>
+           </div>   
+
+        <div class="passo" id="passo-util">
+            <p>Você e Buzz passam um tempo procurando e encontram alguns itens que poderiam ser úteis em situações específicas.</p>
+            <button class="btn-proximo" data-proximo="cabine2">A noite cai</button>
+           </div> 
+           
+           <div class="passo" id="passo-cabine2">
+            <img src="DECISÃO.jpg" alt="">
+            <p>A segunda noite cai subitamente. É a última chance para algo acontecer...</p>
+            <button class="btn-proximo" data-proximo="dia3">Dia 3</button>
+           </div> 
+
+           <div class="passo" id="passo-dia3">
+            <img src="front.jpg" alt="">
+            <p>O terceiro dia amanhece com um tom sombrio. Os suprimentos estão escassos e o nível de oxigênio está perigosamente baixo. Não há mais nada para fazer. Nesse momento, Buzz sussurra "Ainda temos o rádio"</p>
+            <button class="btn-proximo" data-proximo="radio">CONSERTAR O RÁDIO? (DIFÍCIL)</button>
+            <button class="btn-proximo" data-proximo="final">Preparar para o fim.</button>
+           </div>
+
+           <div class="passo" id="passo-final">
+            <img src="images (1).jpg" alt="">
+            <p>Vocês decidem aceitar o destino com dignidade e se posicionam na janela do Eagle para contemplar a Terra uma última vez.</p>
+            <button class="btn-proximo" data-proximo="fim_triste">Epílogo</button>
+           </div> 
+
+        <div class="passo" id="passo-fim_triste">
+            <img src="cenario-passo-sair.PNG" alt="">
+            <p>As horas passam, os sistemas falham um a um, mas vocês enfrentam o fim com coragem e dignidade. Talvez, um dia, outros humanos retornem para honrar o local onde os primeiros exploradores lunares repousam eternamente sob as estrelas.</p>
+            <p>FINAL: TRISTE</p>
+            </div>
+        
+        <div class="passo" id="passo-radio">
+            <img src="front.jpg" alt="">
+            <p>Você e Buzz trabalham no rádio principal. É uma tarefa frustrante. Após horas, um chiado e, finalmente,... Um sinal!</p>
+            <button class="btn-proximo" data-proximo="houston">COMUNICAR COM HOUSTON, AGORA!</button>
+           </div>
+
+        <div class="passo" id="passo-houston">
+            <img src="2.PNG" alt="">
+            <p>'Houston, aqui é Eagle! Nos ouvem?' Após alguns segundos, uma voz responde: 'Eagle, aqui é Houston! Meu Deus, rapazes, que bom ouvir suas vozes! Qual a situação?'</p>
+            <button class="btn-proximo" data-proximo="relatar">Relatar a situação com o Controle da Missão</button>
+           </div>
+
+           <div class="passo" id="passo-relatar">
+            <img src="2.PNG" alt="">
+            <p>'Eagle, estamos trabalhando em uma solução. Uma sonda de resgate não tripulada está sendo preparada. Estimamos... 24 horas para chegar a vocês. Ok?'</p>
+            <button class="btn-proximo" data-proximo="perigo">"Confirmado, Houston. Aguentaremos. Eagle desligando."</button>
+            <button class="btn-proximo" data-proximo="talvez">Solicitar que Collins tente uma manobra de aproximação arriscada</button>
+           </div>
+
+           <div class="passo" id="passo-talvez">
+            <img src="2.PNG" alt="">
+            <p>Houston fica em silêncio por um momento. 'Eagle, isso seria extremamente arriscado. O Columbia não foi projetado para descer tão baixo na órbita lunar.' Mas então, Collins interrompe: 'Eu posso tentar. Não vou deixar vocês se houver uma chance.'</p>
+            <button class="btn-proximo" data-proximo="perigo">Reconsiderar e aguardar a sonda</button>
+            <button class="btn-proximo" data-proximo="manobra">Insistir na manobra</button>
+           </div>
+
+           <div class="passo" id="passo-perigo">
+            <img src="front.jpg" alt="">
+            <p>A espera é longa e silenciosa mas, ao fundo, algo remete a triste realidade: a sonda não chegará a tempo...</p>
+            <button class="btn-proximo" data-proximo="final">"Buzz, acho que nossa carreira chegou ao fim..."</button>
+           </div>
+           
+           <div class="passo" id="passo-manobra">
+            <p>Houston autoriza a manobra. Collins traz o Columbia para uma órbita muito mais baixa do que o planejado. Com o tempo se esgotando, você decide tentar uma solução desesperada para o motor de subida</p>
+            <button class="btn-proximo" data-proximo="trabalho">Consertar motor</button>
+           </div>
+           
+           <div class="passo" id="passo-trabalho">
+            <img src="lunar-module-s.png" alt="">
+            <p>Após horas de trabalho intenso, vocês fazem os preparativos finais para a decolagem. "Estamos prontos, Comandante." Você inicia a sequência de ignição...</p>
+            <button class="btn-proximo" data-proximo="ligar">É agora ou nunca!</button>
+           </div>
+
+           <div class="passo" id="passo-ligar">
+            <img src="the-eagle-is-headed-home-by-alan-bean-apollo-33.jpg" alt="">
+            <p>O motor funciona! O Eagle se ergue da superfície lunar. Cada segundo é uma vitória contra as probabilidades. Finalmente, vocês alcançam a órbita lunar, onde Collins e o Columbia aguardam. A acoplagem é tensa, mas bem-sucedida.</p>
+            <button class="btn-proximo" data-proximo="fim_feliz">Finalmente em casa</button>
+           </div>
+
+           <div class="passo" id="passo-fim_feliz">
+            <img src="earth-1388003_1280.jpg" alt="">
+            <p>O retorno à Terra é entra para a história como um dos maiores feitos da exploração espacial. Collins, que deveria ter sido apenas 'o homem que ficou na órbita', torna-se um herói por direito próprio. A jornada de volta à Terra é triunfal. A NASA implementa muitas modificações, salvando outras vidas no espaço. Vocês retornam não apenas como heróis, mas como símbolos de como a capacidade humana e a amizade podem superar desafios impossíveis.</p>
+            <p>FINAL: FELIZ</p>
+            </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
