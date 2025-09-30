@@ -1,5 +1,5 @@
 body {
-    background-color: #02021a;
+    background-color: #000000;
     color: aliceblue;
     font-family: "Roboto", sans-serif;
     display: flex;
@@ -17,13 +17,6 @@ button {
     font-size: 100%;
 }
 
-.passo {
-display: none;
-}
-.passo.ativo {
-    display: block;
-}
-
 main {
     text-align: center;
     max-width: 90%;
@@ -31,4 +24,39 @@ main {
 
 img {
     max-width: 40%;
+}
+
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* atrás de tudo */
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.passo {
+    display: none;
+    position: relative;
+    z-index: 1; /* na frente das estrelas */
+}
+
+.passo.ativo {
+    display: block;
 }
